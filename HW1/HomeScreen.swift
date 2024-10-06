@@ -9,15 +9,27 @@ import SwiftUI
 
 struct HomeScreen: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            NavigationStack{
+                VStack {
+                    Text("Mobile Computing")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.bottom, 60)
+                    
+                    NavigationLink {
+                        DetailView()
+                    }
+                    label: {
+                        Image(systemName: "star.fill")
+                        Text("Next Page")
+                    }
+                    .buttonStyle(.borderedProminent)
+                }
+            }
         }
-        .padding()
+        
     }
-}
+
 
 #Preview {
     HomeScreen()
