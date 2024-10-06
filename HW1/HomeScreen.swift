@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Homework1.swift
 //  HW1
 //
 //  Created by Samman Tyata on 10/5/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeScreen: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HomeScreen()
 }
